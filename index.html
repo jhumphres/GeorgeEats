@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>George Eats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css" />
+</head>
+<body>
+
+    <!-- Loading Message -->
+
+    <div class="content">
+        <center><pre style="font-size: 8px;">
+
+                                                                                                                                                                             
+            ,o888888o.    8 8888888888       ,o888888o.     8 888888888o.      ,o888888o.    8 8888888888             8 8888888888            .8.    8888888 8888888888 d888888o.   
+            8888     `88.  8 8888          . 8888     `88.   8 8888    `88.    8888     `88.  8 8888                   8 8888                 .888.         8 8888     .`8888:' `88. 
+         ,8 8888       `8. 8 8888         ,8 8888       `8b  8 8888     `88 ,8 8888       `8. 8 8888                   8 8888                :88888.        8 8888     8.`8888.   Y8 
+         88 8888           8 8888         88 8888        `8b 8 8888     ,88 88 8888           8 8888                   8 8888               . `88888.       8 8888     `8.`8888.     
+         88 8888           8 888888888888 88 8888         88 8 8888.   ,88' 88 8888           8 888888888888           8 888888888888      .8. `88888.      8 8888      `8.`8888.    
+         88 8888           8 8888         88 8888         88 8 888888888P'  88 8888           8 8888                   8 8888             .8`8. `88888.     8 8888       `8.`8888.   
+         88 8888   8888888 8 8888         88 8888        ,8P 8 8888`8b      88 8888   8888888 8 8888                   8 8888            .8' `8. `88888.    8 8888        `8.`8888.  
+         `8 8888       .8' 8 8888         `8 8888       ,8P  8 8888 `8b.    `8 8888       .8' 8 8888                   8 8888           .8'   `8. `88888.   8 8888    8b   `8.`8888. 
+            8888     ,88'  8 8888          ` 8888     ,88'   8 8888   `8b.     8888     ,88'  8 8888                   8 8888          .888888888. `88888.  8 8888    `8b.  ;8.`8888 
+             `8888888P'    8 888888888888     `8888888P'     8 8888     `88.    `8888888P'    8 888888888888           8 888888888888 .8'       `8. `88888. 8 8888     `Y8888P ,88P' 
+                        
+                
+</pre></center>
+        <div style="width:40%; margin:0 auto;align:center;padding-bottom:25px;">
+            <Center>
+            <img src="https://lh3.googleusercontent.com/d/1USf81BdPQsSC7ZvzDyzKaZVBsQUCeCyF=w1000?authuser=0">
+            <p>Where you at tonight?</p>
+            </Center>
+            
+            <select id="cityFilter">
+                <option value="">All Cities</option>
+            </select>
+            <button onclick="pickRandom()">🍔  WHAT WOULD GEORGE DO? 🍔</button>
+            <div id="randomResult"></div>
+            <br>
+            <center>🔍 <a href="#" id="toggleLink" onclick="toggleManualFilter()">Show All</a></center>
+            <BR>
+        </div>
+        
+    <div class="ManualFilterContainer">
+        <div class="filters">
+            <input type="text" id="nameSearch" placeholder="Search by Restaurant Name">
+            <select id="cuisineFilter">
+                <option value="">All Cuisines</option>
+            </select>
+            <button onclick="filterData()">Filter</button>
+        </div>
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Restaurant Name</th>
+                    <th>Cuisine</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                    <th>Airport Code</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    </div>
+    <script src="./static/script.js"></script>
+</body>
+</html>
