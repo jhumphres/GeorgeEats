@@ -1,4 +1,23 @@
-1. Copy and Paste handle_food() and app.router.add_get('/letseat', self.handle_food) into main.py as directed in handlefood.py
-2. place index.html, script.js, style.css into the static folder.
-3. Start the webserver (main.py) as directed by disguise
-4. Eat
+🍔 GEORGE EATS! Setup Guide
+Follow these steps to get GEORGE EATS! up and running:
+
+🚀 Installation Steps
+Add Route to main.py
+
+Copy and paste the handle_food() function and the following route definition into main.py:
+python
+Copy
+Edit
+app.router.add_get('/letseat', self.handle_food)
+Place Static Files
+
+Move the following files into the static folder:
+index.html
+script.js
+style.css
+Start the Web Server
+
+Start the server (main.py) using the instructions provided by disguise.
+Enjoy!
+
+Open your browser and start exploring some delicious options! 🍔
