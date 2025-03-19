@@ -1,3 +1,7 @@
+#Include the below line to start_Services() below the existing routes
+app.router.add_get('/letseat', self.handle_food)
+
+# Include the below code in main.py - ABOVE start_services()
 async def handle_food(self, request):
         """Handle fetching restaurant data from Google Sheets."""
         try:
