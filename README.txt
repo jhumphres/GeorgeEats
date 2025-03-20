@@ -2,7 +2,6 @@
 Follow these steps to get GEORGE EATS! up and running:
 
 🚀 Installation Steps
-Add Route to main.py
 
 Copy and paste the handle_food() function and the following route definition into main.py (with the rest of the routes) - Youre smart, you will find it.
 
